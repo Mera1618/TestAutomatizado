@@ -32,7 +32,7 @@ test("Prueba Técnica Mercado Libre busqueda y filtros para PS5", async ({
       document.querySelectorAll(".ui-search-result__wrapper")
     );
     return items.slice(0, 5).map((item, index) => {
-      const nombre = item.querySelector("h2")?.innerText || "Producto";
+      const nombre = item.querySelector("h2")?.innerText || "Play Station 5";
       const precio =
         item.querySelector(".andes-money-amount__fraction")?.innerText || "0";
       return {
